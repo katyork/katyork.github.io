@@ -1,1 +1,232 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Kat York - Web Developer</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <ul>
+          <li><a href="#about-me" alt="">About</a></li>
+          <li><a href="#projects" alt="">Work</a></li>
+          <li><a href="#contact" alt="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="about-me">
+      <h1>Kat York</h1>
+      <h4>Web Developer</h4>
+      <hr><br>
+      <h2>About Me</h2>
+      <p>My name is Katherine York and I am working towards becoming a web developer. I previously worked in Transport Modelling & Analysis, where I gained some experience of coding using R and Python for analysing transport data, in particular geospatial data.</p>
+      <p>After a career break, during which time I did a campervan conversion, had a baby and went travelling, I have decided to pursue a career in web development.</p>
+      <p>In July and August 2023 I completed a FreeCodeCamp certification in Responsive Web Design using HTML and CSS. In August 2023 I started a course in Web Design & Development with the Coder's Guild.</p>
+      <h4>Scroll down to see some examples of my work.</h4>
+    </section>
+    <section id="projects">
+      <h2>My Work</h2>
+      <p>Here is a filter / search feature I created as part of the Web Development & Design course. Go to my <a href="https://codepen.io/Katherine-York/">Codepen</a> profile to see some more examples of my work.</p>
+
+<div id="animal-photographs">
+  <h3>Animal Photographs</h3>
+  
+  <div id="filter-search">
+    <p>Filter by animal:</p>
+    <button animal="bear" type="button" class="buttonFilter" id="btn-bears" value="bears">Bears</button>
+    <button animal="dolphin" type="button" class="buttonFilter" id="btn-dolphins" value="dolphins">Dolphins</button>
+    <button animal="duck" type="button" class="buttonFilter" id="btn-ducks" value="ducks">Ducks</button>
+    <button animal="frog" type="button" class="buttonFilter" id="btn-frogs" value="frogs">Frogs</button>
+    <button animal="all" type="button" class="buttonFilter" id="btn-show-all">Show All</button>
+    <p> Search by description for example, "brown".</p>
+    <form id="search-form">
+      <input type="text" placeholder="Search..." id="search-input"></input>
+    </form>
+  </div>
+
+
+  <!-- IMAGES - Why do the instructions say to put these in containers? -->
+  <p id="helper-text"></p>
+  <div id="images">
+    <span class="bear imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/158109/kodiak-brown-bear-adult-portrait-wildlife-158109.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Brown Bear on a Body of Water "></span>
+    <span class="bear imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/35435/pexels-photo.jpg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Brown Bear"></span>
+    <span class="bear imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/1068554/pexels-photo-1068554.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Close-Up Photography of Grizzly Bear"></span>
+    <span class="bear imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/598966/pexels-photo-598966.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Grayscale Photo of a Polar Bear Cub "></span>
+    <span class="bear imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/1083502/pexels-photo-1083502.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Brown Bear on Brown Wood"></span>
+    <span class="bear imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/162340/bear-bavarian-bear-wild-brown-bear-162340.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Grizzly Bear Walking Beside Pond"></span>
+    <span class="bear imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/1466592/pexels-photo-1466592.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Brown Bear On Body Of Water"></span>
+    <span class="bear imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/3634926/pexels-photo-3634926.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Shallow Focus Photo of Bear"></span>
+    <span class="bear imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/34700/bear-animals-zoo-captivity.jpg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Close-up Photography of Brown Bear on Gray Rock"></span>
+    <span class="bear imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/451230/pexels-photo-451230.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Selective Focus Photo of Polar Bear "></span>
+    <span class="bear imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/158140/european-brown-bear-wild-animal-bear-dangerous-158140.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Brown Bear Lying on Green Lawn Grass"></span>
+    <span class="bear imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/3048722/pexels-photo-3048722.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Close-up Photo of Grizzly Bear"></span>
+    <span class="bear imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/158233/european-brown-bear-wild-animal-bear-dangerous-158233.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Short-coated Tan Dog on Selective Focus Photo"></span>
+    <span class="bear imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/1328414/pexels-photo-1328414.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Photo of Grizzly Bear"></span>
+    <span class="dolphin imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/64219/dolphin-marine-mammals-water-sea-64219.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Cute Dolphin Underwater "></span>
+    <span class="dolphin imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/1986374/pexels-photo-1986374.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Gray Dolphin on Body of Water"></span>
+    <span class="dolphin imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/225869/pexels-photo-225869.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Adorable Dolphins on Surface of Water"></span>
+    <span class="dolphin imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/162079/dolphin-sea-marine-mammals-wise-162079.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Dolphin's Head in the Surface"></span>
+    <span class="dolphin imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/3354346/pexels-photo-3354346.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Dolphins Jumping Out from Ocean"></span>
+    <span class="dolphin imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/2347462/pexels-photo-2347462.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Swimming Dolphins"></span>
+    <span class="dolphin imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/4886378/pexels-photo-4886378.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Single dolphin floating underwater near water surface against blue sea in daylight in tropical lagoon in summer"></span>
+    <span class="dolphin imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/3439576/pexels-photo-3439576.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Black Dolphin in Body of Water"></span>
+    <span class="dolphin imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/2422915/pexels-photo-2422915.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Photo of Pod of Dolphins"></span>
+    <span class="dolphin imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/994473/pexels-photo-994473.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Photography of Body of Water"></span>
+    <span class="dolphin imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Split-shot Photo of Dolphins Undewater "></span>
+    <span class="dolphin imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/219945/pexels-photo-219945.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Black Whale in Water"></span>
+    <span class="dolphin imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/994474/pexels-photo-994474.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Dolphin in Water"></span>
+    <span class="dolphin imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/966966/pexels-photo-966966.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Gray Dolphin on Blue Water"></span>
+    <span class="dolphin imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/2280613/pexels-photo-2280613.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Photo of Dolphins During Dawn"></span>
+    <span class="duck imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/162140/duckling-birds-yellow-fluffy-162140.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Duckling on Black Soil during Daytime"></span>
+    <span class="duck imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/660266/pexels-photo-660266.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Depth of Field Photography of Mallard Duck on Body of Water"></span>
+    <span class="duck imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/209035/pexels-photo-209035.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Brown White and Blue Duck"></span>
+    <span class="duck imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/833687/pexels-photo-833687.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Green and Gray Mallard Duck"></span>
+    <span class="duck imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/322438/pexels-photo-322438.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="White Duck Near Water Close-up Photo"></span>
+    <span class="duck imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/162059/duck-water-bird-water-mirroring-162059.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Brown White Black Duck"></span>
+    <span class="duck imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/724372/pexels-photo-724372.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Two White Ducks on Green Grass Field"></span>
+    <span class="duck imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/157465/pexels-photo-157465.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="2 Yellow Ducklings Closeup Photography"></span>
+    <span class="duck imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/2397623/pexels-photo-2397623.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Beige Duck on Sand"></span>
+    <span class="duck imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/162137/duckling-birds-yellow-fluffy-162137.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Yellow Duckling on Gray Dirt"></span>
+    <span class="duck imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/221429/pexels-photo-221429.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Black and Gray Duck on Body of Water"></span>
+    <span class="duck imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/2294541/pexels-photo-2294541.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Gray and Green Duck Wading "></span>
+    <span class="frog imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/70083/frog-macro-amphibian-green-70083.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Green Frog"></span>
+    <span class="frog imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/76957/tree-frog-frog-red-eyed-amphibian-76957.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Green Blue Yellow and Orange Frog on Green Leaf"></span>
+    <span class="frog imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/45863/frog-butterfly-pond-mirroring-45863.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Macro Photography of Green Frog"></span>
+    <span class="frog imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/35669/hyla-meridionalis-the-frog-amphibians.jpg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Shallow Focus Photography of Green Frog"></span>
+    <span class="frog imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/674318/pexels-photo-674318.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Orange and Black Frog"></span>
+    <span class="frog imageFilter"><span class="frog"><img loading="lazy" src="https://images.pexels.com/photos/638689/pexels-photo-638689.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Orange and Black Poison Darth Frog"></span>
+    <span class="frog imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/2092041/pexels-photo-2092041.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Close-Up Photo of Green Frog"></span>
+    <span class="frog imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/1101196/pexels-photo-1101196.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Macro Shot Photo of a Brown Frog"></span>
+    <span class="frog imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/36020/frog-terrarium-amphibians.jpg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Green and White Frog Resting on Brown Tree Branch"></span>
+    <span class="frog imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/73798/frog-marbled-reed-frog-amphibian-animal-73798.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Brown Frog on Red Petal Flower"></span>
+    <span class="frog imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/1046494/pexels-photo-1046494.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Closeup Photo of Blue Frog on Green Surface"></span>
+    <span class="frog imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/1370740/pexels-photo-1370740.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Photo of Green Frog on Leaf"></span>
+    <span class="frog imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/103796/pexels-photo-103796.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Green Frog"></span>
+    <span class="frog imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/3180755/pexels-photo-3180755.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Selective Focus Photo of Red and Blue Frog on Ground"></span>
+    <span class="frog imageFilter"><img loading="lazy" src="https://images.pexels.com/photos/63650/frog-toad-eyes-animal-63650.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Orange and Black Frog"></span>
+  </div>
+    
+    <!-- Keep this out of the way to keep focus on img elements above  -->
+  <small>Photos provided by <a href="https://www.pexels.com">Pexels</a>.</small>
+</div>
+
+
+
+    </section>
+    <section id="contact">
+      <h2>Get In Touch</h2>
+      <p>Email: katherineyork90@gmail.com</p>
+      <p>Tel: 07783 774787</p>
+    </section>
+  </body>
+  <footer>
+    <p><small>&copy; Copyright 2023, Katherine York</small></p>
+  </footer>
+  <script>
+    const buttons = document.querySelectorAll(".buttonFilter");
+const btnShowAll = document.getElementById("btn-show-all")
+const images = document.querySelectorAll(".imageFilter");
+const headings = document.querySelectorAll(".headingFilter");
+const searchBox = document.getElementById("search-input");
+const animalsList = document.getElementById("animals-list")
+const helperText = document.getElementById("helper-text")
+
+let filterFlag = false; // animal filter selected
+let searchFlag = false; // search box contains text
+let imageCount = images.length; // count of images displayed
+
+let searchValue = "";
+let filterAnimal = "all";
+
+function setHelperText () {
+  if (searchFlag === true && filterFlag === true) {
+    helperText.innerHTML = `Showing ${imagesCount} animal photographs that match the search ${searchValue} and the filter ${filterAnimal.toUpperCase()}`
+  } else if (searchFlag === true && filterFlag === false) {
+    helperText.innerHTML = `Showing ${imagesCount} animal photographs that match the search ${searchValue}`
+  } else if (searchFlag === false && filterFlag === true) {
+    helperText.innerHTML = `Showing ${imagesCount} animal photographs that match the filter ${filterAnimal.toUpperCase()}`
+  } else {
+    helperText.innerHTML = `Showing all ${imageCount} animal photographs`
+  }
+}
+
+setHelperText()
+
+let animal;
+
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('click', filter);
+}
+
+function showSelected (button) {
+  button.style.border = "2px solid black"
+  button.style.borderRadius = "5px"
+}
+
+showSelected (btnShowAll) // show all button selected by default
+
+let imagesFiltered = images;
+
+function filter (event) {
+  var btn, btnElement, animalImage, animalHeading, i;
+  imagesFiltered = [];
+  for (i = 0; i < buttons.length; i++) {
+    buttons[i].style.border = "";
+  }
+  btn = event.currentTarget;
+  showSelected(btn);
+  filterAnimal = btn.getAttribute("animal");
+  // IF show all button is selected set filter variable to false, ELSE (if animal button is selected) set filter variable to true
+  if (filterAnimal === "all") {
+    filterFlag = false;
+  } else {
+    filterFlag = true;
+  }
+  // LOOP through each item in images array: IF show all button is selected display image, ELSE IF animal button matches image animal display image, ELSE do not display image
+  for (i = 0; i < images.length; i++) {
+    animalImage = images[i].classList.item(0);
+    if (filterAnimal === "all") {
+      images[i].style.display = "inline-block";
+      imagesFiltered = images;
+    } else if (filterAnimal === animalImage) {
+      images[i].style.display = "inline-block";
+      imagesFiltered.push(images[i]);
+    } else {
+      images[i].style.display = "none";
+    }
+  }
+  imagesCount = imagesFiltered.length;
+  setHelperText();
+}
+
+searchBox.addEventListener('keyup', search);
+let searchResults = imagesFiltered;
+
+function search (event) {
+  var i, alt;
+  searchResults = [];
+  searchValue = searchBox.value.toUpperCase();
+  for (i = 0; i < imagesFiltered.length; i++) { // For each image container
+    img = imagesFiltered[i].getElementsByTagName("img")[0] // Get the image element inside the container
+    alt = img.getAttribute('alt') // Get the alt attribute of the image
+    if (alt.toUpperCase().indexOf(searchValue) > -1) { // IF alt text contains search value THEN image to be displayed
+      imagesFiltered[i].style.display = "inline-block";
+      searchResults.push(imagesFiltered[i]);
+    } else {
+      imagesFiltered[i].style.display = "none"; // ELSE image to be hidden
+    }
+  }
+  event.preventDefault();
+  // IF search box contains text then set search variable to true ELSE set search variable to false
+  if (searchValue) {
+    searchFlag = true;
+  } else {
+    searchFlag = false;
+  }
+  imagesCount = searchResults.length;
+  setHelperText();
+}
+</script>
+</html>

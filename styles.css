@@ -1,0 +1,104 @@
+body {
+    background-color: rgb(107, 177, 169);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    color: black;
+}
+
+
+header {
+    position: fixed; /* Fixed relative to viewport */
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center; /* Vertical align */
+    height: 5em;
+    width: 100%; /* Must remember to apply width and height to header or you cannot change background color */
+    background-color: azure;
+    border-bottom: 3px solid rgb(125, 6, 6);
+  }
+
+h1 {
+    font-size: 40px;
+}
+
+nav {
+    width: 50%;
+    height: 1em;
+    max-width: 300px;
+    position: fixed;
+    right: 60px;
+}
+
+nav > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Creates 3 columns of equal width */
+    grid-gap: 20px;
+}
+
+nav  ul > li {
+    list-style-type: none; /* Removes bullets from ul */
+    font-size: 1.2em;
+}
+
+section {
+    text-align: center;
+}
+
+#about-me {
+    padding-top: 6em;
+    margin: 0 5%;
+    padding-bottom: 20em;
+}
+
+#contact {
+    padding-top: 25%;
+    height: 20%;
+    padding-bottom: 45%;
+    margin: 0 5%;
+}
+
+#projects {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 6em;
+}
+
+
+footer {
+    height: 2em;
+    width: 100%;
+    margin-left: 0;
+}
+
+#images {
+    display: inline-block;
+    text-align: justify;
+    margin: 1em;
+}
+
+img {
+    height: 4em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#animal-photographs {
+    background-color: azure;
+    padding: 1em;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#filter-search {
+    background-color: rgb(196, 212, 212);
+    max-width: 500px;
+    width: 95%;
+    margin: auto;
+    padding-top: 0.2em;
+    padding-bottom: 0.5em;
+    border: 1px solid black;
+}
+
